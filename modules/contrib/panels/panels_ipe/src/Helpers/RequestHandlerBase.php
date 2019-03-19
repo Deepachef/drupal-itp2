@@ -7,7 +7,7 @@ use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\panels\Plugin\DisplayVariant\PanelsDisplayVariant;
 use Drupal\panels\Storage\PanelsStorageManagerInterface;
 use Drupal\panels_ipe\Exception\EmptyRequestContentException;
-use Drupal\user\SharedTempStore;
+use Drupal\Core\TempStore\SharedTempStore;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -22,7 +22,7 @@ abstract class RequestHandlerBase implements RequestHandlerInterface {
   private $response = [];
 
   /**
-   * @var \Drupal\user\SharedTempStore */
+   * @var \Drupal\Core\TempStore\SharedTempStoreFactory */
   private $tempStore;
 
   /**
