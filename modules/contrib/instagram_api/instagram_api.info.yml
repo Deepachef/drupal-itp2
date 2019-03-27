@@ -1,0 +1,12 @@
+name: Instagram API
+description: 'Instagram API for Drupal provides API access to Instagram.'
+package: Media
+configure: instagram_api.settings
+type: module
+# core: 8.x
+
+# Information added by Drupal.org packaging script on 2018-04-27
+version: '8.x-1.0'
+core: '8.x'
+project: 'instagram_api'
+datestamp: 1524847391

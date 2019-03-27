@@ -1,0 +1,4 @@
+services:
+  taxonomy_form_block.get_taxonomy:
+    class: Drupal\taxonomy_form_block\TaxonomyFormBlock
+
